@@ -4,7 +4,7 @@
 
 ### Your pocket-sized radar for Wi-Fi, Bluetooth trackers and risky apps
 
-*A small contribution to the open-source community — free forever, no paid servers, no telemetry.*
+*A small contribution to the open-source community free forever, no paid servers, no telemetry.*
 
 ![Android](https://img.shields.io/badge/Android-8.0%2B-3DDC84?logo=android&logoColor=white)
 ![Kotlin](https://img.shields.io/badge/Kotlin-Compose%20Material%203-7F52FF?logo=kotlin&logoColor=white)
