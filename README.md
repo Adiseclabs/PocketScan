@@ -12,7 +12,7 @@
 ![Privacy](https://img.shields.io/badge/Telemetry-none-brightgreen)
 ![Root](https://img.shields.io/badge/Root-not%20needed-lightgrey)
 
-**Made by [Aditya Bhosale](https://github.com/Adiseclabs)** · +91 9324218321 · adityabhosale212223@gmail.com
+**Made by [Aditya Bhosale](https://github.com/Adiseclabs)**  · adityabhosale212223@gmail.com
 
 </div>
 
