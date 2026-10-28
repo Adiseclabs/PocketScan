@@ -1,0 +1,1 @@
+On-device LAN scanner, BLE tracker finder and offline CVE hints. No ads, no telemetry.

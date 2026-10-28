@@ -1,0 +1,9 @@
+PocketLab is a small contribution to the open-source community by Aditya Bhosale: free forever, no paid servers, no telemetry.
+
+- LAN scanner: finds devices on your Wi-Fi, grabs service banners, scores risk
+- New-device alerts with a foreground monitor
+- BLE tracker detection (AirTag, SmartTag, Tile, Chipolo, Pebblebee) and Fox Hunt with haptics
+- Offline CVE hints (heuristic; banners ignore distro backports)
+- Advisory-only blocklists (StevenBlack, Phishing Army, URLhaus, OpenPhish) - nothing is blocked
+
+No root. No VPN. No firewall. No packet capture. Everything runs on your device.

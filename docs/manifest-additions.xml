@@ -1,0 +1,27 @@
+<!-- Add inside <manifest> (outside <application>). No VPN permission, no VpnService. -->
+<uses-permission android:name="android.permission.INTERNET"/>
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+<uses-permission android:name="android.permission.NEARBY_WIFI_DEVICES" android:usesPermissionFlags="neverForLocation"/>
+<uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+<uses-permission android:name="android.permission.BLUETOOTH_SCAN" android:usesPermissionFlags="neverForLocation"/>
+<uses-permission android:name="android.permission.BLUETOOTH_CONNECT"/>
+<uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+<uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC"/>
+<uses-permission android:name="android.permission.FOREGROUND_SERVICE_CONNECTED_DEVICE"/>
+<!-- Extras that the spec'd features need: -->
+<uses-permission android:name="android.permission.VIBRATE"/>
+<uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT"/>
+<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+<!-- Android 8-11 BLE scanning needs these (location is never stored or used) -->
+<uses-permission android:name="android.permission.BLUETOOTH" android:maxSdkVersion="30"/>
+<uses-permission android:name="android.permission.BLUETOOTH_ADMIN" android:maxSdkVersion="30"/>
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" android:maxSdkVersion="30"/>
+<uses-feature android:name="android.hardware.bluetooth_le" android:required="false"/>
+
+<!-- Add inside <application> -->
+<service android:name="com.pocketlab.ScanService" android:exported="false" android:foregroundServiceType="dataSync"/>
+<service android:name="com.pocketlab.BleScanService" android:exported="false" android:foregroundServiceType="connectedDevice"/>
+<receiver android:name="com.pocketlab.BootReceiver" android:exported="false">
+    <intent-filter><action android:name="android.intent.action.BOOT_COMPLETED"/></intent-filter>
+</receiver>
